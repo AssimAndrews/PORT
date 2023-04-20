@@ -8,35 +8,43 @@ html{
 	scroll-behavior: smooth;
 }
 
+.heading{
+	display: flex;
+}
+
 .content{
-	color: #ff7200;
+	display: flex;
+	color: #fff;
 	background-color: rgba(0, 0, 0, 1.0);
 	width: 100%;
 	height: 10vh;
+	padding: 10px;
 }
 
 .nav{
 	display: flex;
-	justify-content: center;
-	background-color: rgba(0, 0, 0, 0.5);
-	position: sticky;
-	top: 0;
-
+	background-color: rgba(0, 0, 0, 1.0);
+	position: fixed;
+	height: 10vh;
+	right: 0px;
 }
 
 .nav ul{
 	display: flex;
-	list-style: none;
-	color: #fff;
+	flex-direction: row;
+	padding: 10px;
 }
 
 .nav ul li{
 	display: flex;
-	margin: 8px 20px;
+	justify-content: space-between;
+
 }
 
 .nav ul li a{
+	display: flex;
 	color: #fff;
+	padding: 10px;
 	text-decoration: none;
 }
 
@@ -44,10 +52,20 @@ html{
 	display: flex;
 	justify-content: center;
 	padding: 20px;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: #fff;
+	width: 100%;
+	height: 10vh;
+}
+
+.start{
+	display: flex;
+	justify-content: center;
 	background-color: #000;
 	color: #fff;
 	width: 100%;
-	height: 60vh;
+	height: 50vh;
+	padding: 10px;
 }
 
 .about{
@@ -68,7 +86,7 @@ html{
 	height: 50vh;
 }
 
-.con{
+.contact{
 	display: flex;
 	justify-content: center;
 	background-color: rgba(0, 0, 0, 0.5);
@@ -76,13 +94,40 @@ html{
 	height: 10vh;
 }
 
-.contact{
+.social{
 	display: flex;
-	justify-content: center;
 	background-color: #000;
+	width: 100%;
+	height: 50vh;
 	color: #fff;
+	padding: 20px;
 }
 
-.contact ul li a{
+.social ul{
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	margin: 20px -130px;
+}
+
+.social ul li{
+	display: flex;
+	font-family: Arial;
+	font-weight: bold;
+}
+
+.social ul li a{
 	color: #fff;
+	text-decoration: none;
+}
+
+.tel{
+	display: flex;
+	justify-content: space-between;
+	color: #fff;
+	margin: 0px 400px;
+}
+
+.mail{
+	padding: 0px;
 }
